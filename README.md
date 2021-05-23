@@ -1,29 +1,20 @@
-thecoffeecoins Core integration/staging tree
+TheCoffeeCoins Core integration/staging tree
 =====================================
 
-https://thecoffeecoinscore.org
+https://thecoffeecoins.com
 
-For an immediately usable, binary version of the thecoffeecoins Core software, see
-https://thecoffeecoinscore.org/en/download/.
+Further information about TheCoffeeCoins Core is available in the [doc folder](/doc).
 
-Further information about thecoffeecoins Core is available in the [doc folder](/doc).
-
-What is thecoffeecoins?
+What is TheCoffeeCoins?
 ----------------
 
-thecoffeecoins is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. thecoffeecoins uses peer-to-peer technology to operate
+TheCoffeeCoins is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. TheCoffeeCoins uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. thecoffeecoins Core is the name of open source
+out collectively by the network. TheCoffeeCoins Core is the name of open source
 software which enables the use of this currency.
 
-For more information read the original thecoffeecoins whitepaper.
-
-License
--------
-
-thecoffeecoins Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+For more information read the original TheCoffeeCoins whitepaper.
 
 Development Process
 -------------------
@@ -31,11 +22,6 @@ Development Process
 The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
 completely stable. [Tags](https://github.com/thecoffeecoins/thecoffeecoins/tags) are created
 regularly from release branches to indicate new official, stable release versions of thecoffeecoins Core.
-
-The https://github.com/thecoffeecoins-core/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
@@ -68,15 +54,3 @@ Changes should be tested by somebody other than the developer who wrote the
 code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
-
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[thecoffeecoins Core's Transifex page](https://www.transifex.com/thecoffeecoins/thecoffeecoins/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
