@@ -1,35 +1,35 @@
-// Copyright (c) 2011-2020 The Bitcoin Core developers
+// Copyright (c) 2011-2020 The thecoffeecoins Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_BITCOINADDRESSVALIDATOR_H
-#define BITCOIN_QT_BITCOINADDRESSVALIDATOR_H
+#ifndef thecoffeecoins_QT_thecoffeecoinsADDRESSVALIDATOR_H
+#define thecoffeecoins_QT_thecoffeecoinsADDRESSVALIDATOR_H
 
 #include <QValidator>
 
 /** Base58 entry widget validator, checks for valid characters and
  * removes some whitespace.
  */
-class BitcoinAddressEntryValidator : public QValidator
+class thecoffeecoinsAddressEntryValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit BitcoinAddressEntryValidator(QObject *parent);
+    explicit thecoffeecoinsAddressEntryValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const override;
 };
 
-/** Bitcoin address widget validator, checks for a valid bitcoin address.
+/** thecoffeecoins address widget validator, checks for a valid thecoffeecoins address.
  */
-class BitcoinAddressCheckValidator : public QValidator
+class thecoffeecoinsAddressCheckValidator : public QValidator
 {
     Q_OBJECT
 
 public:
-    explicit BitcoinAddressCheckValidator(QObject *parent);
+    explicit thecoffeecoinsAddressCheckValidator(QObject *parent);
 
     State validate(QString &input, int &pos) const override;
 };
 
-#endif // BITCOIN_QT_BITCOINADDRESSVALIDATOR_H
+#endif // thecoffeecoins_QT_thecoffeecoinsADDRESSVALIDATOR_H

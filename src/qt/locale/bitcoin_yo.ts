@@ -16,7 +16,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>thecoffeecoinsGUI</name>
     <message>
         <source>Open Wallet</source>
         <translation>sii apamowo</translation>
@@ -204,6 +204,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>thecoffeecoins-core</name>
     </context>
 </TS>

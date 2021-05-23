@@ -1,9 +1,9 @@
-// Copyright (c) 2012-2020 The Bitcoin Core developers
+// Copyright (c) 2012-2020 The thecoffeecoins Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHECKQUEUE_H
-#define BITCOIN_CHECKQUEUE_H
+#ifndef thecoffeecoins_CHECKQUEUE_H
+#define thecoffeecoins_CHECKQUEUE_H
 
 #include <sync.h>
 #include <tinyformat.h>
@@ -244,4 +244,4 @@ public:
     }
 };
 
-#endif // BITCOIN_CHECKQUEUE_H
+#endif // thecoffeecoins_CHECKQUEUE_H
