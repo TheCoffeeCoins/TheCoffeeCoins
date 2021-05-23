@@ -87,12 +87,12 @@
         <context-group purpose="location"><context context-type="linenumber">97</context></context-group>
       </trans-unit>
       <trans-unit id="_msg17">
-        <source xml:space="preserve">These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source xml:space="preserve">These are your thecoffeecoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">104</context></context-group>
       </trans-unit>
       <trans-unit id="_msg18">
-        <source xml:space="preserve">These are your Bitcoin addresses for receiving payments. Use the &apos;Create new receiving address&apos; button in the receive tab to create new addresses.
+        <source xml:space="preserve">These are your thecoffeecoins addresses for receiving payments. Use the &apos;Create new receiving address&apos; button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">109</context></context-group>
@@ -133,7 +133,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">299</context></context-group>
         <context-group><context context-type="x-gettext-msgctxt">An error message.</context></context-group>
-        <note annotates="source" from="developer">%1 is a name of the file (e.g., &quot;addrbook.csv&quot;) that the bitcoin addresses were exported to.</note>
+        <note annotates="source" from="developer">%1 is a name of the file (e.g., &quot;addrbook.csv&quot;) that the thecoffeecoins addresses were exported to.</note>
       </trans-unit>
       <trans-unit id="_msg26">
         <source xml:space="preserve">Exporting Failed</source>
@@ -218,7 +218,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">110</context></context-group>
       </trans-unit>
       <trans-unit id="_msg40">
-        <source xml:space="preserve">Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source xml:space="preserve">Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR thecoffeecoinsS&lt;/b&gt;!</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">111</context></context-group>
       </trans-unit>
@@ -244,7 +244,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">63</context></context-group>
       </trans-unit>
       <trans-unit id="_msg45">
-        <source xml:space="preserve">Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source xml:space="preserve">Remember that encrypting your wallet cannot fully protect your thecoffeecoinss from being stolen by malware infecting your computer.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">118</context></context-group>
       </trans-unit>
@@ -326,8 +326,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
       </trans-unit>
     </group>
   </body></file>
-  <file original="../bitcoin.cpp" datatype="cpp" source-language="en" target-language="en"><body>
-    <group restype="x-trolltech-linguist-context" resname="BitcoinApplication">
+  <file original="../thecoffeecoins.cpp" datatype="cpp" source-language="en" target-language="en"><body>
+    <group restype="x-trolltech-linguist-context" resname="thecoffeecoinsApplication">
       <trans-unit id="_msg59">
         <source xml:space="preserve">Runaway exception</source>
         <target xml:space="preserve"></target>
@@ -377,8 +377,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
       </trans-unit>
     </group>
   </body></file>
-  <file original="../bitcoingui.cpp" datatype="cpp" source-language="en" target-language="en"><body>
-    <group restype="x-trolltech-linguist-context" resname="BitcoinGUI">
+  <file original="../thecoffeecoinsgui.cpp" datatype="cpp" source-language="en" target-language="en"><body>
+    <group restype="x-trolltech-linguist-context" resname="thecoffeecoinsGUI">
       <trans-unit id="_msg68" approved="yes">
         <source xml:space="preserve">&amp;Overview</source>
         <target xml:space="preserve">&amp;Overview</target>
@@ -465,8 +465,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">1319</context></context-group>
       </trans-unit>
       <trans-unit id="_msg85" approved="yes">
-        <source xml:space="preserve">Send coins to a Bitcoin address</source>
-        <target xml:space="preserve">Send coins to a Bitcoin address</target>
+        <source xml:space="preserve">Send coins to a thecoffeecoins address</source>
+        <target xml:space="preserve">Send coins to a thecoffeecoins address</target>
         <context-group purpose="location"><context context-type="linenumber">255</context></context-group>
       </trans-unit>
       <trans-unit id="_msg86" approved="yes">
@@ -530,8 +530,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">325</context></context-group>
       </trans-unit>
       <trans-unit id="_msg98" approved="yes">
-        <source xml:space="preserve">Sign messages with your Bitcoin addresses to prove you own them</source>
-        <target xml:space="preserve">Sign messages with your Bitcoin addresses to prove you own them</target>
+        <source xml:space="preserve">Sign messages with your thecoffeecoins addresses to prove you own them</source>
+        <target xml:space="preserve">Sign messages with your thecoffeecoins addresses to prove you own them</target>
         <context-group purpose="location"><context context-type="linenumber">326</context></context-group>
       </trans-unit>
       <trans-unit id="_msg99">
@@ -540,8 +540,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">327</context></context-group>
       </trans-unit>
       <trans-unit id="_msg100" approved="yes">
-        <source xml:space="preserve">Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <target xml:space="preserve">Verify messages to ensure they were signed with specified Bitcoin addresses</target>
+        <source xml:space="preserve">Verify messages to ensure they were signed with specified thecoffeecoins addresses</source>
+        <target xml:space="preserve">Verify messages to ensure they were signed with specified thecoffeecoins addresses</target>
         <context-group purpose="location"><context context-type="linenumber">328</context></context-group>
       </trans-unit>
       <trans-unit id="_msg101">
@@ -625,7 +625,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">1010</context></context-group>
       </trans-unit>
       <trans-unit id="_msg117">
-        <source xml:space="preserve">Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source xml:space="preserve">Request payments (generates QR codes and thecoffeecoins: URIs)</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">266</context></context-group>
       </trans-unit>
@@ -647,12 +647,12 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
       <group restype="x-gettext-plurals">
         <context-group purpose="location"><context context-type="linenumber">918</context></context-group>
         <trans-unit id="_msg121[0]" approved="yes">
-          <source xml:space="preserve">%n active connection(s) to Bitcoin network</source>
-          <target xml:space="preserve">%n active connection to Bitcoin network</target>
+          <source xml:space="preserve">%n active connection(s) to thecoffeecoins network</source>
+          <target xml:space="preserve">%n active connection to thecoffeecoins network</target>
         </trans-unit>
         <trans-unit id="_msg121[1]" approved="yes">
-          <source xml:space="preserve">%n active connection(s) to Bitcoin network</source>
-          <target xml:space="preserve">%n active connections to Bitcoin network</target>
+          <source xml:space="preserve">%n active connection(s) to thecoffeecoins network</source>
+          <target xml:space="preserve">%n active connections to thecoffeecoins network</target>
         </trans-unit>
       </group>
       <group restype="x-gettext-plurals">
@@ -707,12 +707,12 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">1023</context></context-group>
       </trans-unit>
       <trans-unit id="_msg131">
-        <source xml:space="preserve">Load Partially Signed Bitcoin Transaction</source>
+        <source xml:space="preserve">Load Partially Signed thecoffeecoins Transaction</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">330</context></context-group>
       </trans-unit>
       <trans-unit id="_msg132">
-        <source xml:space="preserve">Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source xml:space="preserve">Load Partially Signed thecoffeecoins Transaction from clipboard</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">332</context></context-group>
       </trans-unit>
@@ -737,7 +737,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">342</context></context-group>
       </trans-unit>
       <trans-unit id="_msg137">
-        <source xml:space="preserve">Open a bitcoin: URI</source>
+        <source xml:space="preserve">Open a thecoffeecoins: URI</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">346</context></context-group>
       </trans-unit>
@@ -762,7 +762,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">361</context></context-group>
       </trans-unit>
       <trans-unit id="_msg142">
-        <source xml:space="preserve">Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source xml:space="preserve">Show the %1 help message to get a list with possible thecoffeecoins command-line options</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">365</context></context-group>
       </trans-unit>
@@ -1294,7 +1294,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">36</context></context-group>
       </trans-unit>
       <trans-unit id="_msg240">
-        <source xml:space="preserve">The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
+        <source xml:space="preserve">The entered address &quot;%1&quot; is not a valid thecoffeecoins address.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">113</context></context-group>
       </trans-unit>
@@ -1350,8 +1350,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </group>
     <group restype="x-trolltech-linguist-context" resname="Intro">
       <trans-unit id="_msg250">
-        <source xml:space="preserve">Bitcoin</source>
-        <target xml:space="preserve" state="needs-review-translation">Bitcoin</target>
+        <source xml:space="preserve">thecoffeecoins</source>
+        <target xml:space="preserve" state="needs-review-translation">thecoffeecoins</target>
         <context-group purpose="location"><context context-type="linenumber">139</context></context-group>
       </trans-unit>
       <trans-unit id="_msg251">
@@ -1392,7 +1392,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         </trans-unit>
       </group>
       <trans-unit id="_msg257">
-        <source xml:space="preserve">%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source xml:space="preserve">%1 will download and store a copy of the thecoffeecoins block chain.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">390</context></context-group>
       </trans-unit>
@@ -1511,12 +1511,12 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
       </trans-unit>
       <trans-unit id="_msg278">
-        <source xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source xml:space="preserve">Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the thecoffeecoins network, as detailed below.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">133</context></context-group>
       </trans-unit>
       <trans-unit id="_msg279">
-        <source xml:space="preserve">Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source xml:space="preserve">Attempting to spend thecoffeecoinss that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">152</context></context-group>
       </trans-unit>
@@ -1594,7 +1594,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
   <file original="../forms/openuridialog.ui" datatype="x-trolltech-designer-ui" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="OpenURIDialog">
       <trans-unit id="_msg292">
-        <source xml:space="preserve">Open bitcoin URI</source>
+        <source xml:space="preserve">Open thecoffeecoins URI</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
       </trans-unit>
@@ -1742,8 +1742,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">225</context></context-group>
       </trans-unit>
       <trans-unit id="_msg320" approved="yes">
-        <source xml:space="preserve">Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <target xml:space="preserve">Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</target>
+        <source xml:space="preserve">Automatically open the thecoffeecoins client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <target xml:space="preserve">Automatically open the thecoffeecoins client port on the router. This only works when your router supports UPnP and it is enabled.</target>
         <context-group purpose="location"><context context-type="linenumber">255</context></context-group>
       </trans-unit>
       <trans-unit id="_msg321" approved="yes">
@@ -1752,7 +1752,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">258</context></context-group>
       </trans-unit>
       <trans-unit id="_msg322">
-        <source xml:space="preserve">Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source xml:space="preserve">Automatically open the thecoffeecoins client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">265</context></context-group>
       </trans-unit>
@@ -1772,7 +1772,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">278</context></context-group>
       </trans-unit>
       <trans-unit id="_msg326">
-        <source xml:space="preserve">Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source xml:space="preserve">Connect to the thecoffeecoins network through a SOCKS5 proxy.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">285</context></context-group>
       </trans-unit>
@@ -1880,7 +1880,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">212</context></context-group>
       </trans-unit>
       <trans-unit id="_msg347">
-        <source xml:space="preserve">Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source xml:space="preserve">Connect to the thecoffeecoins network through a separate SOCKS5 proxy for Tor onion services.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">472</context></context-group>
       </trans-unit>
@@ -2006,8 +2006,8 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
       </trans-unit>
       <trans-unit id="_msg370" approved="yes">
-        <source xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <target xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</target>
+        <source xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the thecoffeecoins network after a connection is established, but this process has not completed yet.</source>
+        <target xml:space="preserve">The displayed information may be out of date. Your wallet automatically synchronizes with the thecoffeecoins network after a connection is established, but this process has not completed yet.</target>
         <context-group purpose="location"><context context-type="linenumber">76</context></context-group>
         <context-group purpose="location"><context context-type="linenumber">411</context></context-group>
       </trans-unit>
@@ -2269,7 +2269,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">173</context></context-group>
       </trans-unit>
       <trans-unit id="_msg419">
-        <source xml:space="preserve">Cannot start bitcoin: click-to-pay handler</source>
+        <source xml:space="preserve">Cannot start thecoffeecoins: click-to-pay handler</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">174</context></context-group>
       </trans-unit>
@@ -2282,7 +2282,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
         <context-group purpose="location"><context context-type="linenumber">253</context></context-group>
       </trans-unit>
       <trans-unit id="_msg421">
-        <source xml:space="preserve">&apos;bitcoin://&apos; is not a valid URI. Use &apos;bitcoin:&apos; instead.</source>
+        <source xml:space="preserve">&apos;thecoffeecoins://&apos; is not a valid URI. Use &apos;thecoffeecoins:&apos; instead.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">224</context></context-group>
       </trans-unit>
@@ -2295,7 +2295,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <context-group purpose="location"><context context-type="linenumber">264</context></context-group>
       </trans-unit>
       <trans-unit id="_msg423">
-        <source xml:space="preserve">URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source xml:space="preserve">URI cannot be parsed! This can be caused by an invalid thecoffeecoins address or malformed URI parameters.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">254</context></context-group>
       </trans-unit>
@@ -2350,7 +2350,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
       </trans-unit>
     </group>
   </body></file>
-  <file original="../bitcoinunits.cpp" datatype="cpp" source-language="en" target-language="en"><body>
+  <file original="../thecoffeecoinsunits.cpp" datatype="cpp" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="QObject">
       <trans-unit id="_msg433">
         <source xml:space="preserve">Amount</source>
@@ -2362,7 +2362,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
   <file original="../guiutil.cpp" datatype="cpp" source-language="en" target-language="en"><body>
     <group restype="x-trolltech-linguist-context" resname="QObject">
       <trans-unit id="_msg434">
-        <source xml:space="preserve">Enter a Bitcoin address (e.g. %1)</source>
+        <source xml:space="preserve">Enter a thecoffeecoins address (e.g. %1)</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">118</context></context-group>
       </trans-unit>
@@ -3140,7 +3140,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <context-group purpose="location"><context context-type="linenumber">53</context></context-group>
       </trans-unit>
       <trans-unit id="_msg570">
-        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source xml:space="preserve">An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the thecoffeecoins network.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">50</context></context-group>
       </trans-unit>
@@ -3504,7 +3504,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">851</context></context-group>
       </trans-unit>
       <trans-unit id="_msg638">
-        <source xml:space="preserve">When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source xml:space="preserve">When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for thecoffeecoins transactions than the network can process.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">886</context></context-group>
       </trans-unit>
@@ -3603,7 +3603,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">203</context></context-group>
       </trans-unit>
       <trans-unit id="_msg657">
-        <source xml:space="preserve">Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source xml:space="preserve">Creates a Partially Signed thecoffeecoins Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">204</context></context-group>
       </trans-unit>
@@ -3663,7 +3663,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">348</context></context-group>
       </trans-unit>
       <trans-unit id="_msg669">
-        <source xml:space="preserve">Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source xml:space="preserve">Please, review your transaction proposal. This will produce a Partially Signed thecoffeecoins Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">324</context></context-group>
       </trans-unit>
@@ -3765,7 +3765,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         </trans-unit>
       </group>
       <trans-unit id="_msg688">
-        <source xml:space="preserve">Warning: Invalid Bitcoin address</source>
+        <source xml:space="preserve">Warning: Invalid thecoffeecoins address</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">889</context></context-group>
       </trans-unit>
@@ -3816,7 +3816,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">64</context></context-group>
       </trans-unit>
       <trans-unit id="_msg697">
-        <source xml:space="preserve">The Bitcoin address to send the payment to</source>
+        <source xml:space="preserve">The thecoffeecoins address to send the payment to</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">57</context></context-group>
       </trans-unit>
@@ -3848,7 +3848,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">170</context></context-group>
       </trans-unit>
       <trans-unit id="_msg703">
-        <source xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source xml:space="preserve">The fee will be deducted from the amount being sent. The recipient will receive less thecoffeecoinss than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">177</context></context-group>
       </trans-unit>
@@ -3884,7 +3884,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">148</context></context-group>
       </trans-unit>
       <trans-unit id="_msg710">
-        <source xml:space="preserve">A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <source xml:space="preserve">A message that was attached to the thecoffeecoins: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the thecoffeecoins network.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">206</context></context-group>
       </trans-unit>
@@ -3915,12 +3915,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">27</context></context-group>
       </trans-unit>
       <trans-unit id="_msg715">
-        <source xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source xml:space="preserve">You can sign messages/agreements with your addresses to prove you can receive thecoffeecoinss sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">33</context></context-group>
       </trans-unit>
       <trans-unit id="_msg716">
-        <source xml:space="preserve">The Bitcoin address to sign the message with</source>
+        <source xml:space="preserve">The thecoffeecoins address to sign the message with</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">51</context></context-group>
       </trans-unit>
@@ -3963,8 +3963,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">140</context></context-group>
       </trans-unit>
       <trans-unit id="_msg724" approved="yes">
-        <source xml:space="preserve">Sign the message to prove you own this Bitcoin address</source>
-        <target xml:space="preserve">Sign the message to prove you own this Bitcoin address</target>
+        <source xml:space="preserve">Sign the message to prove you own this thecoffeecoins address</source>
+        <target xml:space="preserve">Sign the message to prove you own this thecoffeecoins address</target>
         <context-group purpose="location"><context context-type="linenumber">161</context></context-group>
       </trans-unit>
       <trans-unit id="_msg725" approved="yes">
@@ -3994,7 +3994,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">246</context></context-group>
       </trans-unit>
       <trans-unit id="_msg730">
-        <source xml:space="preserve">The Bitcoin address the message was signed with</source>
+        <source xml:space="preserve">The thecoffeecoins address the message was signed with</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">267</context></context-group>
       </trans-unit>
@@ -4011,8 +4011,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
         <context-group purpose="location"><context context-type="linenumber">309</context></context-group>
       </trans-unit>
       <trans-unit id="_msg733" approved="yes">
-        <source xml:space="preserve">Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <target xml:space="preserve">Verify the message to ensure it was signed with the specified Bitcoin address</target>
+        <source xml:space="preserve">Verify the message to ensure it was signed with the specified thecoffeecoins address</source>
+        <target xml:space="preserve">Verify the message to ensure it was signed with the specified thecoffeecoins address</target>
         <context-group purpose="location"><context context-type="linenumber">318</context></context-group>
       </trans-unit>
       <trans-unit id="_msg734" approved="yes">
@@ -4895,15 +4895,15 @@ Go to File &gt; Open Wallet to load a wallet.
       </trans-unit>
     </group>
   </body></file>
-  <file original="../bitcoinstrings.cpp" datatype="cpp" source-language="en" target-language="en"><body>
-    <group restype="x-trolltech-linguist-context" resname="bitcoin-core">
+  <file original="../thecoffeecoinsstrings.cpp" datatype="cpp" source-language="en" target-language="en"><body>
+    <group restype="x-trolltech-linguist-context" resname="thecoffeecoins-core">
       <trans-unit id="_msg892">
         <source xml:space="preserve">The %s developers</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">12</context></context-group>
       </trans-unit>
       <trans-unit id="_msg893">
-        <source xml:space="preserve">%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <source xml:space="preserve">%s corrupt. Try using the wallet tool thecoffeecoins-wallet to salvage or restoring a backup.</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">13</context></context-group>
       </trans-unit>
@@ -4953,7 +4953,7 @@ Go to File &gt; Open Wallet to load a wallet.
         <context-group purpose="location"><context context-type="linenumber">39</context></context-group>
       </trans-unit>
       <trans-unit id="_msg903">
-        <source xml:space="preserve">Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <source xml:space="preserve">Error: Dumpfile version is not supported. This version of thecoffeecoins-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <target xml:space="preserve"></target>
         <context-group purpose="location"><context context-type="linenumber">41</context></context-group>
       </trans-unit>
