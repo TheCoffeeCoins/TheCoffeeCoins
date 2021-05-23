@@ -64,7 +64,7 @@
     </message>
 </context>
 <context>
-    <name>thecoffeecoinsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>E&amp;xit</source>
         <translation>Buda</translation>
@@ -155,8 +155,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>thecoffeecoins</source>
-        <translation>thecoffeecoins</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     </context>
 <context>
@@ -190,8 +190,8 @@
         <translation>Marii</translation>
     </message>
     <message>
-        <source>Enter a thecoffeecoins address (e.g. %1)</source>
-        <translation>Nyora kero ye thecoffeecoins (sekuti %1)</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>Nyora kero ye Bitcoin (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -328,6 +328,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>thecoffeecoins-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

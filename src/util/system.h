@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The thecoffeecoins Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,11 +7,11 @@
  * Server/client environment: argument handling, config file parsing,
  * thread wrappers, startup time
  */
-#ifndef thecoffeecoins_UTIL_SYSTEM_H
-#define thecoffeecoins_UTIL_SYSTEM_H
+#ifndef BITCOIN_UTIL_SYSTEM_H
+#define BITCOIN_UTIL_SYSTEM_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/thecoffeecoins-config.h>
+#include <config/bitcoin-config.h>
 #endif
 
 #include <attributes.h>
@@ -39,8 +39,8 @@ class UniValue;
 // Application startup time (used for uptime calculation)
 int64_t GetStartupTime();
 
-extern const char * const thecoffeecoins_CONF_FILENAME;
-extern const char * const thecoffeecoins_SETTINGS_FILENAME;
+extern const char * const BITCOIN_CONF_FILENAME;
+extern const char * const BITCOIN_SETTINGS_FILENAME;
 
 void SetupEnvironment();
 bool SetupNetworking();
@@ -527,4 +527,4 @@ private:
 
 } // namespace util
 
-#endif // thecoffeecoins_UTIL_SYSTEM_H
+#endif // BITCOIN_UTIL_SYSTEM_H

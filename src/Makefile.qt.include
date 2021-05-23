@@ -1,16 +1,16 @@
-# Copyright (c) 2013-2016 The thecoffeecoins Core developers
+# Copyright (c) 2013-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/thecoffeecoins-qt
+bin_PROGRAMS += qt/bitcoin-qt
 
-if BUILD_thecoffeecoins_GUI
-  bin_PROGRAMS += thecoffeecoins-gui
+if BUILD_BITCOIN_GUI
+  bin_PROGRAMS += bitcoin-gui
 endif
 
-EXTRA_LIBRARIES += qt/libthecoffeecoinsqt.a
+EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# thecoffeecoins qt core #
+# bitcoin qt core #
 include Makefile.qt_locale.include
 
 QT_FORMS_UI = \
@@ -40,11 +40,11 @@ QT_MOC_CPP = \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_createwalletdialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_thecoffeecoinsaddressvalidator.cpp \
-  qt/moc_thecoffeecoinsamountfield.cpp \
-  qt/moc_thecoffeecoins.cpp \
-  qt/moc_thecoffeecoinsgui.cpp \
-  qt/moc_thecoffeecoinsunits.cpp \
+  qt/moc_bitcoinaddressvalidator.cpp \
+  qt/moc_bitcoinamountfield.cpp \
+  qt/moc_bitcoin.cpp \
+  qt/moc_bitcoingui.cpp \
+  qt/moc_bitcoinunits.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
@@ -88,32 +88,32 @@ QT_MOC_CPP = \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp
 
-thecoffeecoins_MM = \
+BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm \
   qt/macos_appnap.mm
 
 QT_MOC = \
-  qt/thecoffeecoinsamountfield.moc \
+  qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_thecoffeecoins.cpp
-QT_QRC = qt/thecoffeecoins.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_thecoffeecoins_locale.cpp
-QT_QRC_LOCALE = qt/thecoffeecoins_locale.qrc
+QT_QRC_CPP = qt/qrc_bitcoin.cpp
+QT_QRC = qt/bitcoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_bitcoin_locale.cpp
+QT_QRC_LOCALE = qt/bitcoin_locale.qrc
 
-thecoffeecoins_QT_H = \
+BITCOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/thecoffeecoinsaddressvalidator.h \
-  qt/thecoffeecoinsamountfield.h \
-  qt/thecoffeecoins.h \
-  qt/thecoffeecoinsgui.h \
-  qt/thecoffeecoinsunits.h \
+  qt/bitcoinaddressvalidator.h \
+  qt/bitcoinamountfield.h \
+  qt/bitcoin.h \
+  qt/bitcoingui.h \
+  qt/bitcoinunits.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
@@ -172,9 +172,9 @@ RES_FONTS = \
 RES_ICONS = \
   qt/res/icons/add.png \
   qt/res/icons/address-book.png \
-  qt/res/icons/thecoffeecoins.ico \
-  qt/res/icons/thecoffeecoins_testnet.ico \
-  qt/res/icons/thecoffeecoins.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin.png \
   qt/res/icons/chevron.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -217,13 +217,13 @@ RES_ICONS = \
   qt/res/icons/tx_mined.png \
   qt/res/icons/warning.png
 
-thecoffeecoins_QT_BASE_CPP = \
+BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
-  qt/thecoffeecoins.cpp \
-  qt/thecoffeecoinsaddressvalidator.cpp \
-  qt/thecoffeecoinsamountfield.cpp \
-  qt/thecoffeecoinsgui.cpp \
-  qt/thecoffeecoinsunits.cpp \
+  qt/bitcoin.cpp \
+  qt/bitcoinaddressvalidator.cpp \
+  qt/bitcoinamountfield.cpp \
+  qt/bitcoingui.cpp \
+  qt/bitcoinunits.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
@@ -243,9 +243,9 @@ thecoffeecoins_QT_BASE_CPP = \
   qt/trafficgraphwidget.cpp \
   qt/utilitydialog.cpp
 
-thecoffeecoins_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
 
-thecoffeecoins_QT_WALLET_CPP = \
+BITCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
@@ -276,32 +276,32 @@ thecoffeecoins_QT_WALLET_CPP = \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp
 
-thecoffeecoins_QT_CPP = $(thecoffeecoins_QT_BASE_CPP)
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
 if TARGET_WINDOWS
-thecoffeecoins_QT_CPP += $(thecoffeecoins_QT_WINDOWS_CPP)
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
 endif
 if ENABLE_WALLET
-thecoffeecoins_QT_CPP += $(thecoffeecoins_QT_WALLET_CPP)
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
 endif # ENABLE_WALLET
 
 RES_ANIMATION = $(wildcard $(srcdir)/qt/res/animation/spinner-*.png)
 
-thecoffeecoins_RC = qt/res/thecoffeecoins-qt-res.rc
+BITCOIN_RC = qt/res/bitcoin-qt-res.rc
 
-thecoffeecoins_QT_INCLUDES = -DQT_NO_KEYWORDS
+BITCOIN_QT_INCLUDES = -DQT_NO_KEYWORDS
 
-qt_libthecoffeecoinsqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(thecoffeecoins_INCLUDES) $(thecoffeecoins_QT_INCLUDES) \
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(QR_CFLAGS)
-qt_libthecoffeecoinsqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libthecoffeecoinsqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_libthecoffeecoinsqt_a_SOURCES = $(thecoffeecoins_QT_CPP) $(thecoffeecoins_QT_H) $(QT_FORMS_UI) \
+qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(RES_FONTS) $(RES_ICONS) $(RES_ANIMATION)
 if TARGET_DARWIN
-  qt_libthecoffeecoinsqt_a_SOURCES += $(thecoffeecoins_MM)
+  qt_libbitcoinqt_a_SOURCES += $(BITCOIN_MM)
 endif
 
-nodist_qt_libthecoffeecoinsqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
@@ -309,89 +309,89 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libthecoffeecoinsqt_a_OBJECTS) $(qt_thecoffeecoins_qt_OBJECTS) $(thecoffeecoins_gui_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) $(bitcoin_gui_OBJECTS) : | $(QT_MOC)
 
-# thecoffeecoins-qt and thecoffeecoins-gui binaries #
-thecoffeecoins_qt_cppflags = $(AM_CPPFLAGS) $(thecoffeecoins_INCLUDES) $(thecoffeecoins_QT_INCLUDES) \
+# bitcoin-qt and bitcoin-gui binaries #
+bitcoin_qt_cppflags = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QR_CFLAGS)
-thecoffeecoins_qt_cxxflags = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+bitcoin_qt_cxxflags = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-thecoffeecoins_qt_sources = qt/main.cpp
+bitcoin_qt_sources = qt/main.cpp
 if TARGET_WINDOWS
-  thecoffeecoins_qt_sources += $(thecoffeecoins_RC)
+  bitcoin_qt_sources += $(BITCOIN_RC)
 endif
-thecoffeecoins_qt_ldadd = qt/libthecoffeecoinsqt.a $(LIBthecoffeecoins_SERVER)
+bitcoin_qt_ldadd = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-thecoffeecoins_qt_ldadd += $(LIBthecoffeecoins_UTIL) $(LIBthecoffeecoins_WALLET)
+bitcoin_qt_ldadd += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-thecoffeecoins_qt_ldadd += $(LIBthecoffeecoins_ZMQ) $(ZMQ_LIBS)
+bitcoin_qt_ldadd += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-thecoffeecoins_qt_ldadd += $(LIBthecoffeecoins_CLI) $(LIBthecoffeecoins_COMMON) $(LIBthecoffeecoins_UTIL) $(LIBthecoffeecoins_CONSENSUS) $(LIBthecoffeecoins_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+bitcoin_qt_ldadd += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(BDB_LIBS) $(MINIUPNPC_LIBS) $(NATPMP_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(SQLITE_LIBS)
-thecoffeecoins_qt_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
-thecoffeecoins_qt_libtoolflags = $(AM_LIBTOOLFLAGS) --tag CXX
+bitcoin_qt_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+bitcoin_qt_libtoolflags = $(AM_LIBTOOLFLAGS) --tag CXX
 
-qt_thecoffeecoins_qt_CPPFLAGS = $(thecoffeecoins_qt_cppflags)
-qt_thecoffeecoins_qt_CXXFLAGS = $(thecoffeecoins_qt_cxxflags)
-qt_thecoffeecoins_qt_SOURCES = $(thecoffeecoins_qt_sources)
-qt_thecoffeecoins_qt_LDADD = $(thecoffeecoins_qt_ldadd)
-qt_thecoffeecoins_qt_LDFLAGS = $(thecoffeecoins_qt_ldflags)
-qt_thecoffeecoins_qt_LIBTOOLFLAGS = $(thecoffeecoins_qt_libtoolflags)
+qt_bitcoin_qt_CPPFLAGS = $(bitcoin_qt_cppflags)
+qt_bitcoin_qt_CXXFLAGS = $(bitcoin_qt_cxxflags)
+qt_bitcoin_qt_SOURCES = $(bitcoin_qt_sources)
+qt_bitcoin_qt_LDADD = $(bitcoin_qt_ldadd)
+qt_bitcoin_qt_LDFLAGS = $(bitcoin_qt_ldflags)
+qt_bitcoin_qt_LIBTOOLFLAGS = $(bitcoin_qt_libtoolflags)
 
-thecoffeecoins_gui_CPPFLAGS = $(thecoffeecoins_qt_cppflags)
-thecoffeecoins_gui_CXXFLAGS = $(thecoffeecoins_qt_cxxflags)
-thecoffeecoins_gui_SOURCES = $(thecoffeecoins_qt_sources)
-thecoffeecoins_gui_LDADD = $(thecoffeecoins_qt_ldadd)
-thecoffeecoins_gui_LDFLAGS = $(thecoffeecoins_qt_ldflags)
-thecoffeecoins_gui_LIBTOOLFLAGS = $(thecoffeecoins_qt_libtoolflags)
+bitcoin_gui_CPPFLAGS = $(bitcoin_qt_cppflags)
+bitcoin_gui_CXXFLAGS = $(bitcoin_qt_cxxflags)
+bitcoin_gui_SOURCES = $(bitcoin_qt_sources)
+bitcoin_gui_LDADD = $(bitcoin_qt_ldadd)
+bitcoin_gui_LDFLAGS = $(bitcoin_qt_ldflags)
+bitcoin_gui_LIBTOOLFLAGS = $(bitcoin_qt_libtoolflags)
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/thecoffeecoinsstrings.cpp: FORCE
+$(srcdir)/qt/bitcoinstrings.cpp: FORCE
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
-	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" $(PYTHON) ../share/qt/extract_strings_qt.py $(libthecoffeecoins_server_a_SOURCES) $(libthecoffeecoins_wallet_a_SOURCES) $(libthecoffeecoins_common_a_SOURCES) $(libthecoffeecoins_zmq_a_SOURCES) $(libthecoffeecoins_consensus_a_SOURCES) $(libthecoffeecoins_util_a_SOURCES)
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" $(PYTHON) ../share/qt/extract_strings_qt.py $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_consensus_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 
-translate: $(srcdir)/qt/thecoffeecoinsstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(thecoffeecoins_QT_BASE_CPP) qt/thecoffeecoins.cpp $(thecoffeecoins_QT_WINDOWS_CPP) $(thecoffeecoins_QT_WALLET_CPP) $(thecoffeecoins_QT_H) $(thecoffeecoins_MM)
+translate: $(srcdir)/qt/bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/bitcoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) -no-obsolete -I $(srcdir) -locations relative $^ -ts $(srcdir)/qt/locale/thecoffeecoins_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) -no-obsolete -I $(srcdir) -locations relative $^ -ts $(srcdir)/qt/locale/bitcoin_en.ts
 	@test -n $(LCONVERT) || echo "lconvert is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LCONVERT) -o $(srcdir)/qt/locale/thecoffeecoins_en.xlf -i $(srcdir)/qt/locale/thecoffeecoins_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LCONVERT) -o $(srcdir)/qt/locale/bitcoin_en.xlf -i $(srcdir)/qt/locale/bitcoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name thecoffeecoins_locale $(@D)/temp_$(<F) > $@
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin_locale $(@D)/temp_$(<F) > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_FONTS) $(RES_ICONS) $(RES_ANIMATION)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name thecoffeecoins $< > $@
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin $< > $@
 
-CLEAN_QT = $(nodist_qt_libthecoffeecoinsqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_thecoffeecoins_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bitcoin_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-thecoffeecoins_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libthecoffeecoinsqt_a_OBJECTS) $(qt_thecoffeecoins_qt_OBJECTS) qt/thecoffeecoins-qt$(EXEEXT) $(LIBthecoffeecoinsQT)
+bitcoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) qt/bitcoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-thecoffeecoins_qt : qt/thecoffeecoins-qt$(EXEEXT)
+bitcoin_qt : qt/bitcoin-qt$(EXEEXT)
 
 APK_LIB_DIR = qt/android/libs/$(ANDROID_ARCH)
 QT_BASE_PATH = $(shell find ../depends/sources/ -maxdepth 1 -type f -regex ".*qtbase.*\.tar.xz")
 QT_BASE_TLD = $(shell tar tf $(QT_BASE_PATH) --exclude='*/*')
 
-thecoffeecoins_qt_apk: FORCE
+bitcoin_qt_apk: FORCE
 	mkdir -p $(APK_LIB_DIR)
 	cp $(dir $(CC))../sysroot/usr/lib/$(host_alias)/libc++_shared.so $(APK_LIB_DIR)
 	tar xf $(QT_BASE_PATH) -C qt/android/src/ $(QT_BASE_TLD)src/android/jar/src --strip-components=5
 	tar xf $(QT_BASE_PATH) -C qt/android/src/ $(QT_BASE_TLD)src/android/java/src --strip-components=5
 	tar xf $(QT_BASE_PATH) -C qt/android/res/ $(QT_BASE_TLD)src/android/java/res --strip-components=5
-	cp qt/thecoffeecoins-qt $(APK_LIB_DIR)/libthecoffeecoins-qt.so
+	cp qt/bitcoin-qt $(APK_LIB_DIR)/libbitcoin-qt.so
 	cd qt/android && gradle wrapper --gradle-version=6.6.1
 	cd qt/android && ./gradlew build
 

@@ -1,5 +1,5 @@
-Building thecoffeecoins
+Building Bitcoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the thecoffeecoins Core reference implementation of thecoffeecoins.
+elements of the Bitcoin Core reference implementation of Bitcoin.

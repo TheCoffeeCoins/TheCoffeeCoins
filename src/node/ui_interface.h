@@ -1,10 +1,10 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2012-2020 The thecoffeecoins Core developers
+// Copyright (c) 2012-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_NODE_UI_INTERFACE_H
-#define thecoffeecoins_NODE_UI_INTERFACE_H
+#ifndef BITCOIN_NODE_UI_INTERFACE_H
+#define BITCOIN_NODE_UI_INTERFACE_H
 
 #include <functional>
 #include <memory>
@@ -118,4 +118,4 @@ constexpr auto AbortError = InitError;
 
 extern CClientUIInterface uiInterface;
 
-#endif // thecoffeecoins_NODE_UI_INTERFACE_H
+#endif // BITCOIN_NODE_UI_INTERFACE_H

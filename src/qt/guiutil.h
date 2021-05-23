@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2020 The thecoffeecoins Core developers
+// Copyright (c) 2011-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_QT_GUIUTIL_H
-#define thecoffeecoins_QT_GUIUTIL_H
+#ifndef BITCOIN_QT_GUIUTIL_H
+#define BITCOIN_QT_GUIUTIL_H
 
 #include <amount.h>
 #include <fs.h>
@@ -50,7 +50,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the thecoffeecoins Qt UI.
+/** Utility functions used by the Bitcoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -75,10 +75,10 @@ namespace GUIUtil
      */
     void AddButtonShortcut(QAbstractButton* button, const QKeySequence& shortcut);
 
-    // Parse "thecoffeecoins:" URI into recipient object, return true on successful parsing
-    bool parsethecoffeecoinsURI(const QUrl &uri, SendCoinsRecipient *out);
-    bool parsethecoffeecoinsURI(QString uri, SendCoinsRecipient *out);
-    QString formatthecoffeecoinsURI(const SendCoinsRecipient &info);
+    // Parse "bitcoin:" URI into recipient object, return true on successful parsing
+    bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+    QString formatBitcoinURI(const SendCoinsRecipient &info);
 
     // Returns true if given address+amount meets "dust" definition
     bool isDust(interfaces::Node& node, const QString& address, const CAmount& amount);
@@ -163,7 +163,7 @@ namespace GUIUtil
     void openDebugLogfile();
 
     // Open the config file
-    bool openthecoffeecoinsConf();
+    bool openBitcoinConf();
 
     /** Qt event filter that intercepts ToolTipChange events, and replaces the tooltip with a rich text
       representation if needed. This assures that Qt can word-wrap long tooltip messages.
@@ -396,4 +396,4 @@ namespace GUIUtil
 
 } // namespace GUIUtil
 
-#endif // thecoffeecoins_QT_GUIUTIL_H
+#endif // BITCOIN_QT_GUIUTIL_H

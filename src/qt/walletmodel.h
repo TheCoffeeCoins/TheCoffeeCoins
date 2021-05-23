@@ -1,12 +1,12 @@
-// Copyright (c) 2011-2020 The thecoffeecoins Core developers
+// Copyright (c) 2011-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_QT_WALLETMODEL_H
-#define thecoffeecoins_QT_WALLETMODEL_H
+#ifndef BITCOIN_QT_WALLETMODEL_H
+#define BITCOIN_QT_WALLETMODEL_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/thecoffeecoins-config.h>
+#include <config/bitcoin-config.h>
 #endif
 
 #include <key.h>
@@ -47,7 +47,7 @@ QT_BEGIN_NAMESPACE
 class QTimer;
 QT_END_NAMESPACE
 
-/** Interface to thecoffeecoins wallet from Qt view code. */
+/** Interface to Bitcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
@@ -241,4 +241,4 @@ public Q_SLOTS:
     void pollBalanceChanged();
 };
 
-#endif // thecoffeecoins_QT_WALLETMODEL_H
+#endif // BITCOIN_QT_WALLETMODEL_H

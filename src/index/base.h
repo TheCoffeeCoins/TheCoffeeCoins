@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2020 The thecoffeecoins Core developers
+// Copyright (c) 2017-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_INDEX_BASE_H
-#define thecoffeecoins_INDEX_BASE_H
+#ifndef BITCOIN_INDEX_BASE_H
+#define BITCOIN_INDEX_BASE_H
 
 #include <dbwrapper.h>
 #include <primitives/block.h>
@@ -126,4 +126,4 @@ public:
     IndexSummary GetSummary() const;
 };
 
-#endif // thecoffeecoins_INDEX_BASE_H
+#endif // BITCOIN_INDEX_BASE_H

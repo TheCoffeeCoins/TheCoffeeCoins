@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2019 The thecoffeecoins Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_NODE_PSBT_H
-#define thecoffeecoins_NODE_PSBT_H
+#ifndef BITCOIN_NODE_PSBT_H
+#define BITCOIN_NODE_PSBT_H
 
 #include <psbt.h>
 
@@ -53,4 +53,4 @@ struct PSBTAnalysis {
  */
 PSBTAnalysis AnalyzePSBT(PartiallySignedTransaction psbtx);
 
-#endif // thecoffeecoins_NODE_PSBT_H
+#endif // BITCOIN_NODE_PSBT_H

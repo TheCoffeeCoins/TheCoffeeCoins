@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2021 The thecoffeecoins Core developers
+// Copyright (c) 2018-2021 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_EXTERNAL_SIGNER_H
-#define thecoffeecoins_EXTERNAL_SIGNER_H
+#ifndef BITCOIN_EXTERNAL_SIGNER_H
+#define BITCOIN_EXTERNAL_SIGNER_H
 
 #include <univalue.h>
 #include <util/system.h>
@@ -33,7 +33,7 @@ public:
     //! Master key fingerprint of the signer
     std::string m_fingerprint;
 
-    //! thecoffeecoins mainnet, testnet, etc
+    //! Bitcoin mainnet, testnet, etc
     std::string m_chain;
 
     //! Name of signer
@@ -67,4 +67,4 @@ public:
 
 #endif // ENABLE_EXTERNAL_SIGNER
 
-#endif // thecoffeecoins_EXTERNAL_SIGNER_H
+#endif // BITCOIN_EXTERNAL_SIGNER_H

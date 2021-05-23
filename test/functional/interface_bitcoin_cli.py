@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2020 The thecoffeecoins Core developers
+# Copyright (c) 2017-2020 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test thecoffeecoins-cli"""
+"""Test bitcoin-cli"""
 
 from decimal import Decimal
-from test_framework.test_framework import thecoffeecoinsTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_process_error,
@@ -25,7 +25,7 @@ TOO_MANY_ARGS = 'error: too many arguments (maximum 2 for nblocks and maxtries)'
 WALLET_NOT_LOADED = 'Requested wallet does not exist or is not loaded'
 WALLET_NOT_SPECIFIED = 'Wallet file not specified'
 
-class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
+class TestBitcoinCli(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -39,7 +39,7 @@ class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
         """Main test logic"""
         self.nodes[0].generate(BLOCKS)
 
-        self.log.info("Compare responses from getblockchaininfo RPC and `thecoffeecoins-cli getblockchaininfo`")
+        self.log.info("Compare responses from getblockchaininfo RPC and `bitcoin-cli getblockchaininfo`")
         cli_response = self.nodes[0].cli.getblockchaininfo()
         rpc_response = self.nodes[0].getblockchaininfo()
         assert_equal(cli_response, rpc_response)
@@ -86,7 +86,7 @@ class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
         assert_equal(cli_get_info['chain'], blockchain_info['chain'])
 
         if self.is_wallet_compiled():
-            self.log.info("Test -getinfo and thecoffeecoins-cli getwalletinfo return expected wallet info")
+            self.log.info("Test -getinfo and bitcoin-cli getwalletinfo return expected wallet info")
             assert_equal(cli_get_info['balance'], BALANCE)
             assert 'balances' not in cli_get_info.keys()
             wallet_info = self.nodes[0].getwalletinfo()
@@ -155,7 +155,7 @@ class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
             assert 'balance' not in cli_get_info_keys
             assert 'balances' not in cli_get_info_keys
 
-            # Test thecoffeecoins-cli -generate.
+            # Test bitcoin-cli -generate.
             n1 = 3
             n2 = 4
             w2.walletpassphrase(password, self.rpc_timeout)
@@ -196,7 +196,7 @@ class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
             assert_raises_rpc_error(-18, WALLET_NOT_LOADED, self.nodes[0].cli(rpcwallet3, '-generate', 0).echo)
             assert_raises_rpc_error(-18, WALLET_NOT_LOADED, self.nodes[0].cli(rpcwallet3, '-generate', 1, 2, 3).echo)
 
-            # Test thecoffeecoins-cli -generate with -rpcwallet in multiwallet mode.
+            # Test bitcoin-cli -generate with -rpcwallet in multiwallet mode.
             self.nodes[0].loadwallet(wallets[2])
             n3 = 4
             n4 = 10
@@ -248,4 +248,4 @@ class TestthecoffeecoinsCli(thecoffeecoinsTestFramework):
 
 
 if __name__ == '__main__':
-    TestthecoffeecoinsCli().main()
+    TestBitcoinCli().main()

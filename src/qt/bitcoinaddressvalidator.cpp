@@ -1,8 +1,8 @@
-// Copyright (c) 2011-2018 The thecoffeecoins Core developers
+// Copyright (c) 2011-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <qt/thecoffeecoinsaddressvalidator.h>
+#include <qt/bitcoinaddressvalidator.h>
 
 #include <key_io.h>
 
@@ -15,12 +15,12 @@
   - All lower-case letters except for 'l'
 */
 
-thecoffeecoinsAddressEntryValidator::thecoffeecoinsAddressEntryValidator(QObject *parent) :
+BitcoinAddressEntryValidator::BitcoinAddressEntryValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State thecoffeecoinsAddressEntryValidator::validate(QString &input, int &pos) const
+QValidator::State BitcoinAddressEntryValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
 
@@ -80,15 +80,15 @@ QValidator::State thecoffeecoinsAddressEntryValidator::validate(QString &input, 
     return state;
 }
 
-thecoffeecoinsAddressCheckValidator::thecoffeecoinsAddressCheckValidator(QObject *parent) :
+BitcoinAddressCheckValidator::BitcoinAddressCheckValidator(QObject *parent) :
     QValidator(parent)
 {
 }
 
-QValidator::State thecoffeecoinsAddressCheckValidator::validate(QString &input, int &pos) const
+QValidator::State BitcoinAddressCheckValidator::validate(QString &input, int &pos) const
 {
     Q_UNUSED(pos);
-    // Validate the passed thecoffeecoins address
+    // Validate the passed Bitcoin address
     if (IsValidDestinationString(input.toStdString())) {
         return QValidator::Acceptable;
     }

@@ -1,12 +1,12 @@
-// Copyright (c) 2011-2018 The thecoffeecoins Core developers
+// Copyright (c) 2011-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_QT_NOTIFICATOR_H
-#define thecoffeecoins_QT_NOTIFICATOR_H
+#ifndef BITCOIN_QT_NOTIFICATOR_H
+#define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/thecoffeecoins-config.h>
+#include <config/bitcoin-config.h>
 #endif
 
 #include <QIcon>
@@ -74,4 +74,4 @@ private:
 #endif
 };
 
-#endif // thecoffeecoins_QT_NOTIFICATOR_H
+#endif // BITCOIN_QT_NOTIFICATOR_H

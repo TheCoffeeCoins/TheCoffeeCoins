@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The thecoffeecoins Core developers
+// Copyright (c) 2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_NODE_COIN_H
-#define thecoffeecoins_NODE_COIN_H
+#ifndef BITCOIN_NODE_COIN_H
+#define BITCOIN_NODE_COIN_H
 
 #include <map>
 
@@ -21,4 +21,4 @@ struct NodeContext;
  */
 void FindCoins(const NodeContext& node, std::map<COutPoint, Coin>& coins);
 
-#endif // thecoffeecoins_NODE_COIN_H
+#endif // BITCOIN_NODE_COIN_H

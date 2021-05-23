@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The thecoffeecoins Core developers
+// Copyright (c) 2018-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_INTERFACES_NODE_H
-#define thecoffeecoins_INTERFACES_NODE_H
+#ifndef BITCOIN_INTERFACES_NODE_H
+#define BITCOIN_INTERFACES_NODE_H
 
 #include <amount.h>     // For CAmount
 #include <net.h>        // For NodeId
@@ -49,7 +49,7 @@ struct BlockAndHeaderTipInfo
     double verification_progress;
 };
 
-//! Top-level interface for a thecoffeecoins node (thecoffeecoinsd process).
+//! Top-level interface for a bitcoin node (bitcoind process).
 class Node
 {
 public:
@@ -237,4 +237,4 @@ struct BlockTip {
 
 } // namespace interfaces
 
-#endif // thecoffeecoins_INTERFACES_NODE_H
+#endif // BITCOIN_INTERFACES_NODE_H

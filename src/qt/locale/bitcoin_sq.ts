@@ -62,8 +62,8 @@
         <translation>Duke marr adresen</translation>
     </message>
     <message>
-        <source>These are your thecoffeecoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Këto janë thecoffeecoins adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Këto janë Bitcoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -212,7 +212,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>thecoffeecoinsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Duke u sinkronizuar me rrjetin...</translation>
@@ -411,8 +411,8 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>thecoffeecoins</source>
-        <translation>thecoffeecoins</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -800,7 +800,7 @@
     </message>
     </context>
 <context>
-    <name>thecoffeecoins-core</name>
+    <name>bitcoin-core</name>
     <message>
         <source>Insufficient funds</source>
         <translation>Fonde te pamjaftueshme</translation>

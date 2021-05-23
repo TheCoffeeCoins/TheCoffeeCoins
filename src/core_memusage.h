@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2018 The thecoffeecoins Core developers
+// Copyright (c) 2015-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_CORE_MEMUSAGE_H
-#define thecoffeecoins_CORE_MEMUSAGE_H
+#ifndef BITCOIN_CORE_MEMUSAGE_H
+#define BITCOIN_CORE_MEMUSAGE_H
 
 #include <primitives/transaction.h>
 #include <primitives/block.h>
@@ -68,4 +68,4 @@ static inline size_t RecursiveDynamicUsage(const std::shared_ptr<X>& p) {
     return p ? memusage::DynamicUsage(p) + RecursiveDynamicUsage(*p) : 0;
 }
 
-#endif // thecoffeecoins_CORE_MEMUSAGE_H
+#endif // BITCOIN_CORE_MEMUSAGE_H

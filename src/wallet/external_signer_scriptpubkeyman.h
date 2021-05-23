@@ -1,9 +1,9 @@
-// Copyright (c) 2019-2020 The thecoffeecoins Core developers
+// Copyright (c) 2019-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H
-#define thecoffeecoins_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H
+#ifndef BITCOIN_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H
+#define BITCOIN_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H
 
 #ifdef ENABLE_EXTERNAL_SIGNER
 #include <wallet/scriptpubkeyman.h>
@@ -33,4 +33,4 @@ class ExternalSignerScriptPubKeyMan : public DescriptorScriptPubKeyMan
 };
 #endif
 
-#endif // thecoffeecoins_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H
+#endif // BITCOIN_WALLET_EXTERNAL_SIGNER_SCRIPTPUBKEYMAN_H

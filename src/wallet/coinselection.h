@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The thecoffeecoins Core developers
+// Copyright (c) 2017-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_WALLET_COINSELECTION_H
-#define thecoffeecoins_WALLET_COINSELECTION_H
+#ifndef BITCOIN_WALLET_COINSELECTION_H
+#define BITCOIN_WALLET_COINSELECTION_H
 
 #include <amount.h>
 #include <policy/feerate.h>
@@ -125,4 +125,4 @@ bool SelectCoinsBnB(std::vector<OutputGroup>& utxo_pool, const CAmount& target_v
 // Original coin selection algorithm as a fallback
 bool KnapsackSolver(const CAmount& nTargetValue, std::vector<OutputGroup>& groups, std::set<CInputCoin>& setCoinsRet, CAmount& nValueRet);
 
-#endif // thecoffeecoins_WALLET_COINSELECTION_H
+#endif // BITCOIN_WALLET_COINSELECTION_H

@@ -1,4 +1,4 @@
-*After branching off for a major version release of thecoffeecoins Core, use this
+*After branching off for a major version release of Bitcoin Core, use this
 template to create the initial release notes draft.*
 
 *The release notes draft is a temporary file that can be added to by anyone. See
@@ -8,50 +8,50 @@ for the process.*
 *Create the draft, named* "*version* Release Notes Draft"
 *(e.g. "0.20.0 Release Notes Draft"), as a collaborative wiki in:*
 
-https://github.com/thecoffeecoins-core/thecoffeecoins-devwiki/wiki/
+https://github.com/bitcoin-core/bitcoin-devwiki/wiki/
 
 *Before the final release, move the notes back to this git repository.*
 
 *version* Release Notes Draft
 ===============================
 
-thecoffeecoins Core version *version* is now available from:
+Bitcoin Core version *version* is now available from:
 
-  <https://thecoffeecoinscore.org/bin/thecoffeecoins-core-*version*/>
+  <https://bitcoincore.org/bin/bitcoin-core-*version*/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/thecoffeecoins/thecoffeecoins/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://thecoffeecoinscore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
-installer (on Windows) or just copy over `/Applications/thecoffeecoins-Qt` (on Mac)
-or `thecoffeecoinsd`/`thecoffeecoins-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on Mac)
+or `bitcoind`/`bitcoin-qt` (on Linux).
 
-Upgrading directly from a version of thecoffeecoins Core that has reached its EOL is
+Upgrading directly from a version of Bitcoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
-wallet versions of thecoffeecoins Core are generally supported.
+wallet versions of Bitcoin Core are generally supported.
 
 Compatibility
 ==============
 
-thecoffeecoins Core is supported and extensively tested on operating systems
-using the Linux kernel, macOS 10.14+, and Windows 7 and newer.  thecoffeecoins
+Bitcoin Core is supported and extensively tested on operating systems
+using the Linux kernel, macOS 10.14+, and Windows 7 and newer.  Bitcoin
 Core should also work on most other Unix-like systems but is not as
-frequently tested on them.  It is not recommended to use thecoffeecoins Core on
+frequently tested on them.  It is not recommended to use Bitcoin Core on
 unsupported systems.
 
-From thecoffeecoins Core 22.0 onwards, macOS versions earlier than 10.14 are no longer supported.
+From Bitcoin Core 22.0 onwards, macOS versions earlier than 10.14 are no longer supported.
 
 Notable changes
 ===============
@@ -65,13 +65,13 @@ P2P and network changes
 Updated RPCs
 ------------
 
-- Due to [BIP 350](https://github.com/thecoffeecoins/bips/blob/master/bip-0350.mediawiki)
+- Due to [BIP 350](https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki)
   being implemented, behavior for all RPCs that accept addresses is changed when
   a native witness version 1 (or higher) is passed. These now require a Bech32m
   encoding instead of a Bech32 one, and Bech32m encoding will be used for such
   addresses in RPC output as well. No version 1 addresses should be created
   for mainnet until consensus rules are adopted that give them meaning
-  (e.g. through [BIP 341](https://github.com/thecoffeecoins/bips/blob/master/bip-0341.mediawiki)).
+  (e.g. through [BIP 341](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)).
   Once that happens, Bech32m is expected to be used for them, so this shouldn't
   affect any production systems, but may be observed on other networks where such
   addresses already have meaning (like signet). (#20861)
@@ -100,7 +100,7 @@ Updated RPCs
   of `decodescript` these fields are top-level attributes, and included again as attributes
   of the `scriptPubKey` object. (#20286)
 
-- When creating a hex-encoded thecoffeecoins transaction using the `thecoffeecoins-tx` utility
+- When creating a hex-encoded bitcoin transaction using the `bitcoin-tx` utility
   with the `-json` option set, the following fields: `addresses`, `reqSigs` are no longer
   returned in the tx output of the response. (#20286)
 
@@ -134,7 +134,7 @@ Updated settings
 
 Changes to Wallet or GUI related settings can be found in the GUI or Wallet section below.
 
-- Passing an invalid `-rpcauth` argument now cause thecoffeecoinsd to fail to start.  (#20461)
+- Passing an invalid `-rpcauth` argument now cause bitcoind to fail to start.  (#20461)
 
 Tools and Utilities
 -------------------
@@ -192,4 +192,4 @@ Thanks to everyone who directly contributed to this release:
 
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/thecoffeecoins/thecoffeecoins/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

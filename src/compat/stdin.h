@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The thecoffeecoins Core developers
+// Copyright (c) 2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_COMPAT_STDIN_H
-#define thecoffeecoins_COMPAT_STDIN_H
+#ifndef BITCOIN_COMPAT_STDIN_H
+#define BITCOIN_COMPAT_STDIN_H
 
 struct NoechoInst {
     NoechoInst();
@@ -15,4 +15,4 @@ struct NoechoInst {
 bool StdinTerminal();
 bool StdinReady();
 
-#endif // thecoffeecoins_COMPAT_STDIN_H
+#endif // BITCOIN_COMPAT_STDIN_H

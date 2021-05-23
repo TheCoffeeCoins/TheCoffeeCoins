@@ -1,8 +1,8 @@
 # ==============================================================================
-#                          thecoffeecoins Core REVIEWERS
+#                          Bitcoin Core REVIEWERS
 # ==============================================================================
 
-# Configuration of automated review requests for the thecoffeecoins/thecoffeecoins repo
+# Configuration of automated review requests for the bitcoin/bitcoin repo
 # via DrahtBot.
 
 # Order is not important; if a modified file or directory matches a fnmatch,
@@ -31,7 +31,7 @@
 /doc/Doxyfile.in                            @fanquake
 /doc/REST-interface.md                      @jonasschnelli
 /doc/benchmarking.md                        @ariard
-/doc/thecoffeecoins-conf.md                        @hebasto
+/doc/bitcoin-conf.md                        @hebasto
 /doc/build-freebsd.md                       @fanquake
 /doc/build-netbsd.md                        @fanquake
 /doc/build-openbsd.md                       @laanwj
@@ -48,7 +48,7 @@
 /doc/translation_strings_policy.md          @laanwj
 
 # Build aux
-/build-aux/m4/thecoffeecoins_qt.m4                 @hebasto
+/build-aux/m4/bitcoin_qt.m4                 @hebasto
 
 # MSVC build system
 /build_msvc/                                @sipsorcery
@@ -64,7 +64,7 @@
 /src/test/net_peer_eviction_tests.cpp       @jonatack
 /test/functional/mempool_updatefromblock.py @hebasto
 /test/functional/feature_asmap.py           @jonatack
-/test/functional/interface_thecoffeecoins_cli.py   @jonatack
+/test/functional/interface_bitcoin_cli.py   @jonatack
 
 # Backwards compatibility tests
 *_compatibility.py                          @sjors
@@ -93,7 +93,7 @@
 /src/wallet/                                @achow101
 
 # CLI
-/src/thecoffeecoins-cli.cpp                        @jonatack
+/src/bitcoin-cli.cpp                        @jonatack
 
 # Coinstats
 /src/node/coinstats.*                       @fjahr

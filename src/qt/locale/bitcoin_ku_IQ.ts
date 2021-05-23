@@ -48,7 +48,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>thecoffeecoinsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Send</source>
         <translation>&amp;ناردن</translation>
@@ -448,6 +448,6 @@
     </message>
     </context>
 <context>
-    <name>thecoffeecoins-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

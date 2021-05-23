@@ -2,17 +2,17 @@
 
 *.exe
 *.pdb
-src/thecoffeecoins
-src/thecoffeecoinsd
-src/thecoffeecoins-cli
-src/thecoffeecoins-gui
-src/thecoffeecoins-node
-src/thecoffeecoins-tx
-src/thecoffeecoins-util
-src/thecoffeecoins-wallet
+src/bitcoin
+src/bitcoind
+src/bitcoin-cli
+src/bitcoin-gui
+src/bitcoin-node
+src/bitcoin-tx
+src/bitcoin-util
+src/bitcoin-wallet
 src/test/fuzz/fuzz
-src/test/test_thecoffeecoins
-src/qt/test/test_thecoffeecoins-qt
+src/test/test_bitcoin
+src/qt/test/test_bitcoin-qt
 
 # autoreconf
 Makefile.in
@@ -93,7 +93,7 @@ src/qt/bitcoin-qt.includes
 *.qm
 Makefile
 !depends/Makefile
-src/qt/thecoffeecoins-qt
+src/qt/bitcoin-qt
 Bitcoin-Qt.app
 background.tiff*
 

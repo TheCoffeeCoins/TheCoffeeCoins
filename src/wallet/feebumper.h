@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2020 The thecoffeecoins Core developers
+// Copyright (c) 2017-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_WALLET_FEEBUMPER_H
-#define thecoffeecoins_WALLET_FEEBUMPER_H
+#ifndef BITCOIN_WALLET_FEEBUMPER_H
+#define BITCOIN_WALLET_FEEBUMPER_H
 
 #include <primitives/transaction.h>
 
@@ -55,4 +55,4 @@ Result CommitTransaction(CWallet& wallet,
 
 } // namespace feebumper
 
-#endif // thecoffeecoins_WALLET_FEEBUMPER_H
+#endif // BITCOIN_WALLET_FEEBUMPER_H

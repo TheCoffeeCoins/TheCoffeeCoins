@@ -1,9 +1,9 @@
-// Copyright (c) 2019-2020 The thecoffeecoins Core developers
+// Copyright (c) 2019-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_INDEX_DISKTXPOS_H
-#define thecoffeecoins_INDEX_DISKTXPOS_H
+#ifndef BITCOIN_INDEX_DISKTXPOS_H
+#define BITCOIN_INDEX_DISKTXPOS_H
 
 #include <flatfile.h>
 #include <serialize.h>
@@ -32,4 +32,4 @@ struct CDiskTxPos : public FlatFilePos
 };
 
 
-#endif // thecoffeecoins_INDEX_DISKTXPOS_H
+#endif // BITCOIN_INDEX_DISKTXPOS_H

@@ -28,7 +28,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>thecoffeecoinsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -103,8 +103,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>thecoffeecoins</source>
-        <translation>thecoffeecoins</translation>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -336,6 +336,6 @@
     </message>
     </context>
 <context>
-    <name>thecoffeecoins-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

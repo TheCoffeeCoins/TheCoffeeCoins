@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2021 The thecoffeecoins Core developers
+// Copyright (c) 2011-2021 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_NODE_BLOCKSTORAGE_H
-#define thecoffeecoins_NODE_BLOCKSTORAGE_H
+#ifndef BITCOIN_NODE_BLOCKSTORAGE_H
+#define BITCOIN_NODE_BLOCKSTORAGE_H
 
 #include <cstdint>
 #include <vector>
@@ -78,4 +78,4 @@ FlatFilePos SaveBlockToDisk(const CBlock& block, int nHeight, CChain& active_cha
 
 void ThreadImport(ChainstateManager& chainman, std::vector<fs::path> vImportFiles, const ArgsManager& args);
 
-#endif // thecoffeecoins_NODE_BLOCKSTORAGE_H
+#endif // BITCOIN_NODE_BLOCKSTORAGE_H

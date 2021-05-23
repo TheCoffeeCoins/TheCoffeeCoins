@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The thecoffeecoins Core developers
+// Copyright (c) 2018-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_WALLET_TEST_INIT_TEST_FIXTURE_H
-#define thecoffeecoins_WALLET_TEST_INIT_TEST_FIXTURE_H
+#ifndef BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H
+#define BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H
 
 #include <interfaces/chain.h>
 #include <interfaces/wallet.h>
@@ -22,4 +22,4 @@ struct InitWalletDirTestingSetup: public BasicTestingSetup {
     std::unique_ptr<interfaces::WalletClient> m_wallet_client;
 };
 
-#endif // thecoffeecoins_WALLET_TEST_INIT_TEST_FIXTURE_H
+#endif // BITCOIN_WALLET_TEST_INIT_TEST_FIXTURE_H

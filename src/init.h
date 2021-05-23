@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The thecoffeecoins Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_INIT_H
-#define thecoffeecoins_INIT_H
+#ifndef BITCOIN_INIT_H
+#define BITCOIN_INIT_H
 
 #include <any>
 #include <memory>
@@ -32,7 +32,7 @@ void InitLogging(const ArgsManager& args);
 //!Parameter interaction: change current parameters depending on various rules
 void InitParameterInteraction(ArgsManager& args);
 
-/** Initialize thecoffeecoins core: Basic context setup.
+/** Initialize bitcoin core: Basic context setup.
  *  @note This can be done before daemonization. Do not call Shutdown() if this function fails.
  *  @pre Parameters should be parsed and config file should be read.
  */
@@ -50,7 +50,7 @@ bool AppInitParameterInteraction(const ArgsManager& args);
  */
 bool AppInitSanityChecks();
 /**
- * Lock thecoffeecoins core data directory.
+ * Lock bitcoin core data directory.
  * @note This should only be done after daemonization. Do not call Shutdown() if this function fails.
  * @pre Parameters should be parsed and config file should be read, AppInitSanityChecks should have been called.
  */
@@ -60,7 +60,7 @@ bool AppInitLockDataDirectory();
  */
 bool AppInitInterfaces(NodeContext& node);
 /**
- * thecoffeecoins core main initialization.
+ * Bitcoin core main initialization.
  * @note This should only be done after daemonization. Call Shutdown() if this function fails.
  * @pre Parameters should be parsed and config file should be read, AppInitLockDataDirectory should have been called.
  */
@@ -74,4 +74,4 @@ void SetupServerArgs(NodeContext& node);
 /** Returns licensing information (for -version) */
 std::string LicenseInfo();
 
-#endif // thecoffeecoins_INIT_H
+#endif // BITCOIN_INIT_H

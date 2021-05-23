@@ -48,7 +48,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>thecoffeecoinsGUI</name>
+    <name>BitcoinGUI</name>
     <message>
         <source>Error</source>
         <translation>အမှား</translation>
@@ -188,6 +188,6 @@
     </message>
     </context>
 <context>
-    <name>thecoffeecoins-core</name>
+    <name>bitcoin-core</name>
     </context>
 </TS>

@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The thecoffeecoins Core developers
+// Copyright (c) 2009-2020 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef thecoffeecoins_SCRIPT_SIGCACHE_H
-#define thecoffeecoins_SCRIPT_SIGCACHE_H
+#ifndef BITCOIN_SCRIPT_SIGCACHE_H
+#define BITCOIN_SCRIPT_SIGCACHE_H
 
 #include <script/interpreter.h>
 #include <span.h>
@@ -35,4 +35,4 @@ public:
 
 void InitSignatureCache();
 
-#endif // thecoffeecoins_SCRIPT_SIGCACHE_H
+#endif // BITCOIN_SCRIPT_SIGCACHE_H
